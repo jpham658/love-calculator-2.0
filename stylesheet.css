@@ -16,7 +16,7 @@ nav > ul > li a {
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    color: pink;
+    color: ghostwhite;
 }
 
 nav > ul > li a:hover {
@@ -32,9 +32,23 @@ body {
 }
 
 /* Home page styling */
+#heart {
+    background-color: palevioletred;
+}
+
 .calculator-box {
     background-color: blue;
-}
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: stretch;
+  }
+
+  .box-component {
+    color: white;
+  }
 
 /*About us page styling */
 .about-us {

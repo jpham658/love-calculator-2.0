@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href="stylesheet.css" rel="stylesheet">
-  
+
   <nav id="nav-bar">
     <ul>
       <li><a href="home.html">Home</a></li>
@@ -28,9 +28,24 @@
   <p>This is the home page for the Love Calculator!</p>
   
   <div class="calculator-box">
-    <div class="box-component"></div>
-    <div class="box-component"></div>
-    <div class="box-component"></div>
+    <div class="box-component">
+      <form action="" method="GET">
+        <label for="user-name">
+          Your name:
+          <input type="text" id="user-name" name="user-name" placeholder="Please write your name here" required>
+        </label>
+      </form>
+    </div>
+    <div class="box-component">
+      <div id="heart"></div>
+    </div>
+    <div class="box-component">
+      <form action="" method="GET">
+        <label for="lover-name">
+          Your lover's name:
+          <input type="text" id="lover-name" name="lover-name" placeholder="Please write your lover's name here" required>
+        </label>
+    </form></div>
   </div>
   
   <script src=""></script>
