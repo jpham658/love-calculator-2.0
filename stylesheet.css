@@ -9,6 +9,21 @@ nav > ul {
     padding: 0;
 }
 
+nav > li {
+    float: left;
+}
+
+nav > li > a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: pink;
+}
+
+nav > li > a:hover {
+    background-color: cyan;
+}
+
 .website-header {
     background-color: yellow;
     margin: 2rem;
