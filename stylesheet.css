@@ -23,9 +23,12 @@ nav > ul > li a:hover {
     background-color: cyan;
 }
 
+body {
+    margin: 2rem;
+}
+
 .website-header {
     background-color: yellow;
-    margin: 2rem;
 }
 
 /* Home page styling */
