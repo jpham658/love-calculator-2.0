@@ -1,9 +1,6 @@
 /* General website component styling */
-nav {
-    background-color: red;
-}
-
 nav > ul {
+    background-color: red;
     list-style-type: none;
     margin: 0;
     padding: 0;
