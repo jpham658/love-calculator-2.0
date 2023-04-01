@@ -14,7 +14,7 @@ nav > ul > li {
 }
 
 nav > li a {
-    display: block;
+    padding: 1.5rem;
     text-decoration: none;
     text-align: center;
     color: pink;
