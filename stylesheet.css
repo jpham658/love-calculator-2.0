@@ -1,9 +1,37 @@
-nav {
-    background-color: red;
-}
-
+/* General website component styling */
 nav > ul {
+    background-color: red;
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+nav > ul > li {
+    float: left;
+}
+
+nav > li a {
+    padding: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    color: pink;
+}
+
+nav > li a:hover {
+    background-color: cyan;
+}
+
+.website-header {
+    background-color: yellow;
+    margin: 2rem;
+}
+
+/* Home page styling */
+.calculator-box {
+    background-color: blue;
+}
+
+/*About us page styling */
+.about-us {
+    background-color: green;
 }
