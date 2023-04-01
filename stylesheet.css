@@ -13,14 +13,14 @@ nav > li {
     float: left;
 }
 
-nav > li > a {
+nav > li a {
     display: block;
     text-decoration: none;
     text-align: center;
     color: pink;
 }
 
-nav > li > a:hover {
+nav > li a:hover {
     background-color: cyan;
 }
 
