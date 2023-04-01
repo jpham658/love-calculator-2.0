@@ -6,7 +6,7 @@ randomNumber = random.randint(0, 100)
 with open('calculator-display.html', 'w') as file:
 
     # Write the HTML code to display the random number
-    file.write(f"<html><body><h1>Your love score is: {randomNumber}</h1></body></html>")
+    file.write("<html><body><h1>Your love score is: {randomNumber}</h1></body></html>")
 
 
 #with open('calculator-display.html') as file:
