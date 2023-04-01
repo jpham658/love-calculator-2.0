@@ -46,8 +46,17 @@ body {
     align-content: stretch;
   }
 
-  .box-component {
+  .box-component, .middle-component {
     color: white;
+  }
+
+  .middle-box {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
   }
 
   .text-box {
