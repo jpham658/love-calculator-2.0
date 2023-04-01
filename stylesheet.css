@@ -50,6 +50,10 @@ body {
     color: white;
   }
 
+  .text-box {
+    min-width: 5rem;
+  }
+
 /*About us page styling */
 .about-us {
     background-color: green;
