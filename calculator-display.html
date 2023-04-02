@@ -19,6 +19,27 @@
 <div class="website-header">
 <h1 id="website-title">Love Calculator</h1>
 </div>
+<div class="calculator-box">
+    <div class="box-component name-label">
+        <p id="username"></p>
+    </div>
+    
+    <div class="box-component middle-box">
+        <div class="middle-component" id="heart">
+            <p id="heart-label">Compatibility score:</p>
+            <p id="love-percentage"></p>
+        </div>
+        <div class="middle-component">
+            <form action="home.html">
+                <button type="submit">Go back</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="box-component name-label">
+        <p id="lovername"></p>
+    </div>
+</div>
 
 <div class="calculator">
     <div class = "heart-shape">
@@ -26,6 +47,20 @@
     </div>
 </div>
 
-<script></script>
+<script src="">
+    function fillHeart(percent){
+        const heart = document.querySelector(".heart-shape");
+        const fill = document.querySelector("span");
+        fill.style.height = percent + "%";
+    }
+    let percent = 0;
+    setInterval(() => {
+        fillHeart(percent);
+        percent += 10;
+        if (percent > 100) {
+        percent = 0;
+        }
+        }, 500);
+</script>
 </body>
 </html>
