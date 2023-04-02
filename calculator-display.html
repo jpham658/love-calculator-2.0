@@ -18,9 +18,43 @@
 <body>
 <div class="website-header">
 <h1 id="website-title">Love Calculator</h1>
-<h2 class="page-title">Type in you and your prospective lover's name!</h2>
 </div>
-<div id="love-score"><p>Score: 96</p></div>
-<script src=""></script>
+<div class="calculator-box">
+    <div class="box-component name-label">
+        <p id="username"></p>
+    </div>
+    
+    <div class="box-component middle-box">
+        <div class="middle-component" id="heart">
+            <p id="heart-label">Compatibility score:</p>
+            <p id="love-percentage"></p>
+        </div>
+        <div class="middle-component">
+            <form action="home.html">
+                <button type="submit">Go back</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="box-component name-label">
+        <p id="lovername"></p>
+    </div>
+</div>
+
+<script>
+    const username = localStorage.getItem("username-input");
+    const lovername = localStorage.getItem("lovername-input");
+
+    document.getElementById("username").innerHTML = username.toString();
+    document.getElementById("lovername").innerHTML = lovername.toString();
+
+    document.getElementById("love-percentage").innerHTML = lovePercent().toString() + "%";
+
+    function lovePercent() {
+        const percentage = Math.floor(Math.random() * 101);
+        return percentage;
+    }
+</script>
+
 </body>
 </html>
