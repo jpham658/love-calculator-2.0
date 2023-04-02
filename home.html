@@ -39,11 +39,24 @@
 
     <div class="box-component">
       <div class="middle-box">
-        <div class="middle-component"></div>
+        <div class="middle-component">
+          <div id="heart">
+            <p id="love-percent"></p>
+          </div>
+        </div>
         <div class="middle-component">
           <form action="" method="GET">
-            <label for="calculate">
-              <button type="submit">Calculate your compatibility</button>
+            <label>
+              <button id="calculate-btn" onclick="lovePercent()">Calculate your compatibility</button>
+              <script>
+                const button = document.getElementById("calculate-btn");
+                button.addEventListener("click", lovePercent);
+                function lovePercent(event) {
+                  event.preventDefault();
+                  const percentage = Math.floor(Math.random() * 101);
+                  document.getElementById("love-percent").textContent = "Score: " + percentage;
+                }
+              </script>
             </label>
           </form>
         </div>
