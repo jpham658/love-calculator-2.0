@@ -75,32 +75,47 @@ body {
 }
 
 /* Calculator display styling */
-.heart-shape{
-    position: relative; 
-    width: 200px;
-    height: 200px;
-    transform:(45deg);
-    background-color: rgba(255, 75, 84, 1);
-}
-
-.heart-shape:before,
-.heart-shape:after{
-    position: absolute;
-    bottom: 0px;
-    left: -100px;
-    width: 200px;
-    height: 200px;
-    content: '';
+.heart-shape {
+    background-color:rgb(255, 60, 60);
+    display: inline-block;
+    height: 30px;
+    margin: 0 10px;
+    position: relative;
+    top: 0;
+    width: 30px;
+    transform: rotate(-45deg);
+    animation: pulse 1s ease infinite;
+  }
+  
+  .heart-shape:before,
+  .heart-shape:after {
+    content: "";
+    background-color: rgb(255, 60, 60);
     border-radius: 50%;
-    background-color: rgba(255, 75, 84, 1);
-}
+    height: 30px;
+    position: absolute;
+    width: 30px;
+  }
+  
+  .heart-shape:before {
+    top: -15px;
+    left: 0;
+  }
+  
+  .heart-shape:after {
+    left: 15px;
+    top: 0;
+  }
 
-.heart-shape:before{
-    bottom: 0px;
-    left: -100px;
-}
+  @keyframes pulse{
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1);
+    }
 
-.heart-shape:after{
-    top: -100px;
-    right: 0px;
-}
+  }
