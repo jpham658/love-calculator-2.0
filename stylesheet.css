@@ -1,6 +1,22 @@
-@import url(//db.onlinewebfonts.com/c/3abd2fe795c6d15e5cd1ffce0afc50a8?family=Casey+Classic);
-
 /* General website component styling */
+
+body, html {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-size: cover;
+    background-position: center;
+    background-image: radial-gradient(49% 81% at 45% 47%, #ffa5db 0%,
+                                     #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #e0218a 1%, #FF000000 99%),
+                                     radial-gradient(142% 91% at 83% 7%, #ffd9ff 1%, #FF000000 99%),
+                                     radial-gradient(142% 91% at -6% 74%, #e18ebc 1%, #FF000000 99%),
+                                     radial-gradient(142% 91% at 111% 84%, #eae5f2 0%, #f29aec 100%);
+    background-repeat: no-repeat;
+}
+
 nav > ul {
     background-color: red;
     list-style-type: none;
@@ -25,12 +41,8 @@ nav > ul > li a:hover {
     background-color: cyan;
 }
 
-body {
-    margin: 2rem;
-}
-
 .website-header {
-    background-color: yellow;
+    background-color: transparent;
 }
 
 /* Home page styling */
@@ -71,7 +83,7 @@ body {
 
 /*About us page styling */
 .about-us {
-    background-color: green;
+    background-color: beige;
 }
 
 /* Calculator display styling */
