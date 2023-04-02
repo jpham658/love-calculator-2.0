@@ -3,17 +3,16 @@ from bs4 import BeautifulSoup
 
 random_number = random.randint(0, 100)
 
-with open('calculator-display.html', 'r') as file:
-    contents = file.read()
+soup = BeautifulSoup(open("calculator-display.html"), "html.parser")
+div = soup.select_one("#love-score")
+scoretags = div.find_all("p")
+print(div)
 
-soup = BeautifulSoup(contents, 'html.parser')
+for scoretag in scoretags:
+    scoretag.extract()
 
-span = soup.find("span", id='love-score')
-span.string = f"Your random number is: {random_number}"
-
-# Print the contents of the span before and after the modification
-print(f"Before modification: {span}")
-print(f"After modification: {span}")
+score = "<p>Score: "+str(random_number)+"</p>"
+div.append(BeautifulSoup(score, "html.parser"))
 
 with open('calculator-display.html', 'w') as file:
-    file.write(soup.prettify())
+    file.write(str(soup))
