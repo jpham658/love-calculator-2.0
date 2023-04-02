@@ -20,10 +20,22 @@
 <h1 id="website-title">Love Calculator</h1>
 </div>
 
-<div class = "heart-shape">
-    
-</div>
+<div class = "heart-shape"><span></span></div>
 
-<script src=""></script>
+<script src="">
+    function fillHeart(percent){
+        const heart = document.querySelector(".heart-shape");
+        const fill = document.querySelector("span");
+        fill.style.height = percent + "%";
+    }
+    let percent = 0;
+    setInterval(() => {
+        fillHeart(percent);
+        percent += 10;
+        if (percent > 100) {
+        percent = 0;
+        }
+        }, 500);
+</script>
 </body>
 </html>
