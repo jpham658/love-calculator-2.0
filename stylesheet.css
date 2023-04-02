@@ -73,3 +73,33 @@ body {
 .about-us {
     background-color: green;
 }
+
+/* Calculator display styling */
+.heart-shape{
+    position: relative; 
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 75, 84, 0.8);
+}
+
+.heart-shape:before,
+.heart-shape:after{
+    position: absolute;
+    bottom: 0px;
+    left: -100px;
+    width: 200px;
+    height: 200px;
+    content: '';
+    border-radius: 50%;
+    background-color: rgba(255, 75, 84, 0.8);
+}
+
+.heart-shape:before{
+    bottom: 0px;
+    left: -100px;
+}
+
+.heart-shape:after{
+    top: -100px;
+    right: 0px;
+}
