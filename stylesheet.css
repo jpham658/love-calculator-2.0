@@ -52,8 +52,44 @@ body {
     align-content: stretch;
   }
 
-  .box-component, .middle-component {
+  .text-box {
+    width: 150px;
+  }
+
+/*About us page styling */
+.about-us {
+    background-color: green;
+}
+
+.about-us{
+    animation: fade 5s;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+/* Calculator display styling */
+.box-component, .middle-component {
     color: white;
+  }
+
+  .middle-component{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .middle-component-item{
+    flex-basis: auto;
   }
 
   .middle-box {
@@ -64,17 +100,7 @@ body {
     align-items: center;
     align-content: stretch;
   }
-
-  .text-box {
-    width: 150px;
-  }
-
-/*About us page styling */
-.about-us {
-    background-color: green;
-}
-
-/* Calculator display styling */
+  
 .calculator{
     margin: 0;
     padding: 0;
@@ -84,48 +110,22 @@ body {
     justify-content: center;
 }
 .heart-shape{
-    height: 70px;
-    width: 70px;
-    background: #f20044;
     position: relative;
-    transform: rotate(-45deg);
-    box-shadow: -10px 10px 90px #f20044;
     animation: heart 0.6s linear infinite;
     animation-iteration-count: 5.0;
+    font-size: 4em;
 }
 
 @keyframes heart{
     0%{
-        transform: rotate(-45deg) scale(1.5);
+        transform: scale(1.5);
     }
 
     80%{
-        transform: rotate(-45deg) scale(2.0);
+        transform: scale(2.0);
     }
 
     100%{
-        transform: rotate(-45deg) scale(1.0);
+        transform: scale(1.0);
     }
-}
-
-.heart-shape:before{
-    content: '';
-    position: absolute;
-    height: 70px;
-    width: 70px;
-    background: #f20044;
-    top: -50%;
-    border-radius: 50px;
-    box-shadow: -10px 10px 90px #f20044;
-}
-
-.heart-shape:after{
-    content: '';
-    position: absolute;
-    height: 70px;
-    width: 70px;
-    background: #f20044;
-    right: -50%;
-    border-radius: 50px;
-    box-shadow: -10px 10px 90px #f20044;
 }
